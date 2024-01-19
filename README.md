@@ -11,7 +11,7 @@
 </div>
 
 This tool is based upon [Psi](https://github.com/TheBwof/Psi) .This is a telegram implementation with extra features than Psi.
-### Try it at [@Information-Gathering bot](http://t.me/bwofigbot)
+### Try it at [@Bwof IG Bot](http://t.me/bwofigbot)
 
 
 [![Run on Repl.it](https://repl.it/badge/github/TheBwof/TrackDown)](https://repl.it/github/TheBwof/TrackDown)
