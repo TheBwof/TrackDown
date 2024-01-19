@@ -26,7 +26,8 @@ This tool is based upon [Psi](https://github.com/TheBwof/Psi) .This is a telegra
 1. Copy it's API key
 1. Clone the repo using `git clone https://github.com/TheBwof/TrackDown`
 1. `cd TrackDown`
-1. Replace your `YOUR_HOST_URL` and `YOUR_BOT_TOKEN` at [index.js](https://github.com/TheBwof/TrackDown/blob/main/index.js).You can use nano command `nano index.js` for edit this file[](https://github.com/TheBwof/TrackDown/blob/main/src/url.jpg)
+1. Replace your `YOUR_HOST_URL` and `YOUR_BOT_TOKEN` at [index.js](https://github.com/TheBwof/TrackDown/blob/main/index.js).You can use nano command `nano index.js` for edit this file.
+https://raw.githubusercontent.com/TheBwof/TrackDown/main/src/url.jpg
 1. Run `npm install`
 1. Afterwards `npm start`
 1. Your Bot is now online.
