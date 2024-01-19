@@ -22,6 +22,7 @@ This tool is based upon [Psi](https://github.com/TheBwof/Psi) .This is a telegra
  
 
 ### How to build
+1.If you can use world-wide you need to a hosting server,such as:`replit` that provide free hosting server. you can use this Bot any where. And After running program output URL is `host url`
 1. Create a telegram bot through [BotFather](https://t.me/BotFather).
 1. Copy it's API key
 1. Clone the repo using `git clone https://github.com/TheBwof/TrackDown`
