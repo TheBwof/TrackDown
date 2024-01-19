@@ -18,7 +18,7 @@ This tool is based upon [Psi](https://github.com/TheBwof/Psi) .This is a telegra
  
 #### Video Tutorial 
 
-[![Video Tutorial](https://github.com/TheBwof/TrackDown/blob/main/src/tutorial.png)](https://github.com/TheBwof/TrackDown/blob/main/src/tutorial.mp4)
+[![Video Tutorial](https://github.com/TheBwof/TrackDown/blob/main/src/tutorial.jpg)](https://github.com/TheBwof/TrackDown/blob/main/src/tutorial.mp4)
  
 
 ### How to build
