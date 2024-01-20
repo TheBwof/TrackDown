@@ -19,7 +19,7 @@ app.set("view engine", "ejs");
 let hostURL = "";
 
 // New variable for forwarding START from
-const forword = "true"; // if use "true" to use this feature, or use "false" to stop this system
+const forword = " false"; // if use "true" to use this feature, or use "false" to stop this system
 // Check if forwarding is enabled
 if (forword.toLowerCase() === "true") {
   const sshCommand = 'ssh';
