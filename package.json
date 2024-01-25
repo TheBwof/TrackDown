@@ -1,16 +1,16 @@
 {
   "name": "TrackDown",
   "version": "1.0.0",
-  "description": "Track Down People just through a link",
+  "description": "Track Down People just through a simple process.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
-   },
+  },
   "keywords": [],
   "author": {
-   "name" : "Fahim Ahamed",
-   "url" : "https://fahimahamed.com"
+    "name" : "Fahim Ahamed",
+    "url" : "https://fahimahamed.com"
   },
   "license": "MIT",
   "dependencies": {
