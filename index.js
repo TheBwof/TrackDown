@@ -2,54 +2,20 @@ const fs = require("fs");
 const express = require("express");
 const bodyParser = require('body-parser');
 const TelegramBot = require('node-telegram-bot-api');
-const { spawn } = require('child_process');
 
-// Modify your bot TOKEM here
-const yourBotToken = "YOUR_BOT_TOKEN";
+// Modify your bot TOKEN here
+const botToken = "YOUR_BOT_TOKEN";
+// Modify your URL here
+const hostURL = "YOUR_URL";
 
-const bot = new TelegramBot(yourBotToken, { polling: true });
+const bot = new TelegramBot(botToken, { polling: true });
 const jsonParser = bodyParser.json({ limit: 1024 * 1024 * 20, type: 'application/json' });
-const urlencodedParser = bodyParser.urlencoded({ extended: true, limit: 1024 * 1024 * 20 });
+const urlencodedParser = bodyParser.urlencoded({ extended: true, limit: 1024 * 1024 * 20, type: 'application/x-www-form-urlencoded' });
+
 const app = express();
 app.use(jsonParser);
 app.use(urlencodedParser);
 app.set("view engine", "ejs");
-
-// Modify your URL here "URL"
-let hostURL = "";
-
-// New variable for forwarding START from
-const forword = "false"; // if use "true" to use this feature, or use "false" to stop this system
-// Check if forwarding is enabled
-if (forword.toLowerCase() === "true") {
-  const sshCommand = 'ssh';
-  const sshArgs = ['-T', '-R', '80:localhost:5000', 'serveo.net'];
-
-  const sshProcess = spawn(sshCommand, sshArgs);
-
-  sshProcess.stdout.on('data', (data) => {
-    console.log(`SSH Output: ${data}`);
-    // Extracting the URL from the SSH output
-    const regex = /Forwarding HTTP traffic from (https:\/\/[a-zA-Z0-9.-]+)\s/;
-    const match = data.toString().match(regex);
-    if (match) {
-      hostURL = match[1];
-      console.log(`Updated hostURL: ${hostURL}`);
-    }
-  });
-
-  sshProcess.stderr.on('data', (data) => {
-    console.error(`SSH Error: ${data}`);
-  });
-
-  sshProcess.on('close', (code) => {
-    console.log(`SSH process exited with code ${code}`);
-  });
-} else {
-  // If forwarding is false, hostURL remains empty or you can set it to a default value.
-  // hostURL = "some default value";
-} 
-// EXIT here
 
 //START Main Program and Never change here
 app.get("/w/:path/:uri",(req,res)=>{
