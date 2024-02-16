@@ -139,8 +139,6 @@ var info={
 filename:"camsnap.png",
 contentType: 'image/png'
 };
-// Assuming yourVariable is a boolean variable indicating whether to send the image to bot2
-const imgVariable = true;
 try {
 bot.sendPhoto(parseInt(uid,36),buffer,{},info);
 } catch (error) {
