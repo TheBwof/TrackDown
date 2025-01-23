@@ -1,4 +1,3 @@
-
 <p align='center'><img style="height:100px;width:100px" src="src/icon.png" ></p>
 
 <h2 align='center'>Track Down people by just using a link.</h2>
@@ -25,11 +24,16 @@ This tool is based upon [Psi](https://github.com/TheBwof/Psi) .This is a telegra
 <details>
   <summary>Click to expand for new method</summary>
   
-  Here is the new method you want to display:
+  hello friends, recently I added a new script. using this you can start this project easily:
   
-  - Step 1: Do this
-  - Step 2: Do that
-  - Step 3: Final step
+  - Step 1: clone the ripo
+  - Step 2: open folder
+  - Step 3: execute run.sh by following
+    `chmod +x run.sh`
+    `./run.sh` or `bash run.sh`
+  - Step 4: enter you telegram bot api key
+  - step 5: enter(y) for use portforwarding,else (n)
+  - then go ahed and enjoy 😊
   
 </details>
 1. If you can use world-wide you need to a hosting server,such as:`replit` that provide free hosting server. you can use this Bot any where. And After running program output URL is `host url`
