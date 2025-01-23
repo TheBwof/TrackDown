@@ -4,8 +4,8 @@
 
 <div align="center">
 
-[![https://telegram.me/fahimahamed24](https://img.shields.io/badge/Telegram-Channel-orange.svg?style=flat-square)](https://telegram.me/fahimahamed24)
-[![https://telegram.me/fahimahamed24](https://img.shields.io/badge/Telegram-@fahimahamed10-blue.svg?style=flat-square)](https://telegram.me/fahimahamed10)
+[![https://telegram.me/fahimahamedcnl](https://img.shields.io/badge/Telegram-Channel-orange.svg?style=flat-square)](https://telegram.me/fahimahamedcnl)
+[![https://telegram.me/fahimahamed10](https://img.shields.io/badge/Telegram-@fahimahamed10-blue.svg?style=flat-square)](https://telegram.me/fahimahamed10)
 
 </div>
 
