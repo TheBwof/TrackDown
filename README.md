@@ -6,7 +6,7 @@
 <div align="center">
 
 [![https://telegram.me/thebwof](https://img.shields.io/badge/Telegram-Channel-orange.svg?style=flat-square)](https://telegram.me/thebwof)
-[![https://telegram.me/fahimahamed24](https://img.shields.io/badge/Telegram-@fahimahamed24-blue.svg?style=flat-square)](https://telegram.me/fahimahamed24)
+[![https://telegram.me/fahimahamed10](https://img.shields.io/badge/Telegram-@fahimahamed24-blue.svg?style=flat-square)](https://telegram.me/fahimahamed24)
 
 </div>
 
